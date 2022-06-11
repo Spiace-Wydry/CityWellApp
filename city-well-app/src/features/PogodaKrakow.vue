@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="my-card">
+  <div class="my-card my-card-pogoda">
     <div class="podwyzszenie-daty">
       <span><b>Dziś 11.06</b></span>
     </div>
@@ -84,7 +84,7 @@
 </template>
 
 <style lang="scss">
-.my-card {
+.my-card-pogoda {
   margin-right: 20px;
   margin-left: 20px;
   margin-top: 30px;

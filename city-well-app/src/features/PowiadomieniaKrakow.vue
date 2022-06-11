@@ -24,8 +24,11 @@
   margin-right: 20px;
   margin-left: 20px;
   margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .pomniejszenie {
- padding: 8px;
+  padding: 8px;
 }
 </style>

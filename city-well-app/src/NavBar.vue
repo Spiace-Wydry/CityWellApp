@@ -10,10 +10,10 @@ function toggleRightDrawer() {
   <QHeader bordered class="bg-secondary text-white round-border">
     <QToolbar flat>
       <QToolbarTitle :shrink="true">
-        <QAvatar rounded>
+        <QAvatar rounded class="przesun">
           <img src="src\assets\logo.svg" />
         </QAvatar>
-        Studnia Miejska
+        Kraków
       </QToolbarTitle>
       <QSpace />
       <div class="fancy-border">
@@ -55,7 +55,9 @@ function toggleRightDrawer() {
           class="bg-secondary menu-button-margin menu-button"
           ><b>POWIADOMIENIA</b></QBtn
         >
-        <QBtn class="bg-secondary menu-button"><b>ZGŁOŚ</b></QBtn>
+        <QBtn to="/zgloszenie-krakow" class="bg-secondary menu-button"
+          ><b>ZGŁOŚ</b></QBtn
+        >
       </div>
       <div class="button-center">
         <QBtn flat>Zmień miasto</QBtn>

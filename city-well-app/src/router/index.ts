@@ -24,6 +24,11 @@ const router = createRouter({
       name: "powiadomienia",
       component: () => import("../features/PowiadomieniaKrakow.vue"),
     },
+    {
+      path: "/zgloszenie-krakow",
+      name: "zgloszenie",
+      component: () => import("../features/ZgloszenieKrakow.vue"),
+    },
   ],
 });
 

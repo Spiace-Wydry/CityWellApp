@@ -67,7 +67,9 @@ function toggleRightDrawer() {
           class="bg-secondary menu-button-margin menu-button"
           ><b>POWIADOMIENIA</b></QBtn
         >
-        <QBtn class="bg-secondary menu-button"><b>ZGŁOŚ</b></QBtn>
+        <QBtn to="/zgloszenie-krakow" class="bg-secondary menu-button"
+          ><b>ZGŁOŚ</b></QBtn
+        >
       </div>
       <div class="button-center">
         <QBtn flat>Zmień miasto</QBtn>
