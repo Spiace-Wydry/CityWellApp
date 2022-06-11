@@ -2,13 +2,19 @@
 import { RouterView, useRoute } from "vue-router";
 import { useQuasar } from "quasar";
 import NavBar from "./NavBar.vue";
+import { ref, computed } from "vue";
+import BigNavbar from "./BigNavbar.vue";
 const $q = useQuasar();
 const route = useRoute();
+const isHome = computed(() => {
+  return route.name === "home" ? true : false;
+})
 </script>
 
 <template>
-  <QLayout view="hHh lpR fFf">
-    <NavBar v-if="route.name != 'home'" />
+  <QLayout view="hHh lpR fFf" :class="{ 'image-background': isHome }">
+    <NavBar v-if="route.name == 'weather'" />
+    <BigNavbar v-if="route.name == 'krakow'" />
     <QPageContainer>
       <router-view />
     </QPageContainer>
@@ -73,5 +79,9 @@ const route = useRoute();
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+.image-background {
+  background-image: url("src/assets/Obrazek_.png");
+  height: 100%;
 }
 </style>

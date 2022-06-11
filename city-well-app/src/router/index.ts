@@ -10,9 +10,9 @@ const router = createRouter({
       component: HomePage,
     },
     {
-      path: "/wizard",
-      name: "wizard",
-      component: () => import("../features/wizard/WizardPage.vue"),
+      path: "/krakow",
+      name: "krakow",
+      component: () => import("../features/wizard/KrakowPage.vue"),
     },
     {
       path: "/login",

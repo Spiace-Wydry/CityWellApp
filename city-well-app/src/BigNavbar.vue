@@ -7,14 +7,26 @@ function toggleRightDrawer() {
 </script>
 
 <template>
-  <QHeader bordered class="bg-secondary text-white round-border">
+  <QHeader bordered class="bg-secondary text-white round-border navbar-heigh">
     <QToolbar flat>
-      <QToolbarTitle :shrink="true">
+      <div class="navbar-div">
         <QAvatar rounded>
           <img src="src\assets\logo.svg" />
         </QAvatar>
-        Studnia Miejska
-      </QToolbarTitle>
+        <div class="krakow-margin">
+          <span>Kraków</span>
+        </div>
+        <QCard class="small-card wycentruj-ten-card">
+          <QCardSection class="zaokraglijmy-rogi">
+            <div class="trzeba-to-ulozyc">
+              <QIcon class="icon-color" size="md" name="fas fa-solid fa-sun" />
+              <div class="text-black powiekszmy-ta-pogode">
+                <span>Pogodnie <b>21°C</b></span>
+              </div>
+            </div>
+          </QCardSection>
+        </QCard>
+      </div>
       <QSpace />
       <div class="fancy-border">
         <QBtn
@@ -37,7 +49,7 @@ function toggleRightDrawer() {
             <QBtn dense flat icon="close" @click="toggleRightDrawer" />
           </div>
         </div>
-        <QCard class="my-card bg-primary card-border">
+        <QCard class="my-card bg-primary card-border zaokraglijmy-rogi">
           <QCardSection> Najnowsze powiadomienia z miasta </QCardSection>
         </QCard>
       </div>
@@ -63,5 +75,37 @@ function toggleRightDrawer() {
 <style lang="scss">
 .round-border {
   border-bottom-left-radius: 25px;
+}
+.navbar-heigh {
+  height: 150px;
+}
+.navbar-div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  width: 100%;
+}
+.krakow-margin {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 1.7rem;
+}
+.small-card {
+  width: 200px;
+}
+.icon-color {
+  color: #ffa600;
+}
+.trzeba-to-ulozyc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.wycentruj-ten-card {
+  margin: auto;
+  border-radius: 8px !important;
+}
+.powiekszmy-ta-pogode {
+  font-size: 1.1rem;
 }
 </style>
