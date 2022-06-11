@@ -6,7 +6,7 @@ import BigNavbar from "../../BigNavbar.vue";
 
 <template>
   <main>
-    <div class="my-card">
+    <div class="my-card-krakow">
       <QCard class="wycentruj-ten-card bg-primary">
         <QCardSection>
           <div class="ułuzmy-wnetrze-carda">
@@ -82,7 +82,7 @@ import BigNavbar from "../../BigNavbar.vue";
 </template>
 
 <style lang="scss">
-.my-card {
+.my-card-krakow {
   margin-right: 20px;
   margin-left: 20px;
   margin-top: 70px;

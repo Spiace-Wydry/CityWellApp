@@ -14,7 +14,7 @@ const isHome = computed(() => {
 <template>
   <QLayout view="hHh lpR fFf" :class="{ 'image-background': isHome }">
     <NavBar v-if="route.name == 'pogoda'" />
-    <BigNavbar v-if="route.name == 'krakow'" />
+    <BigNavbar v-if="route.name == 'krakow' || route.name == 'powiadomienia'" />
     <QPageContainer>
       <router-view />
     </QPageContainer>

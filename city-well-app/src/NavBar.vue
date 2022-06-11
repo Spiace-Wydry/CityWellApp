@@ -42,7 +42,7 @@ function toggleRightDrawer() {
         </QCard>
       </div>
       <div class="buttons">
-        <QBtn class="bg-secondary menu-button-margin menu-button"
+        <QBtn to="/krakow" class="bg-secondary menu-button-margin menu-button"
           ><b>ZBIORNIKI</b></QBtn
         >
         <QBtn
@@ -50,7 +50,9 @@ function toggleRightDrawer() {
           class="bg-secondary menu-button-margin menu-button"
           ><b>POGODA</b></QBtn
         >
-        <QBtn class="bg-secondary menu-button-margin menu-button"
+        <QBtn
+          to="/powiadomienia-krakow"
+          class="bg-secondary menu-button-margin menu-button"
           ><b>POWIADOMIENIA</b></QBtn
         >
         <QBtn class="bg-secondary menu-button"><b>ZGŁOŚ</b></QBtn>
