@@ -16,7 +16,7 @@ function toggleRightDrawer() {
         <div class="krakow-margin">
           <span>Kraków</span>
         </div>
-        <QCard class="small-card wycentruj-ten-card">
+        <QCard class="small-card wycentruj-ten-card bg-primary">
           <QCardSection class="zaokraglijmy-rogi">
             <div class="trzeba-to-ulozyc">
               <QIcon class="icon-color" size="md" name="fas fa-solid fa-sun" />
