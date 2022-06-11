@@ -1,69 +1,14 @@
 <script setup lang="ts">
-import { RouterView } from "vue-router";
-import RouterLinkBase from "./components/atoms/RouterLinkBase.vue";
+import { RouterView, useRoute } from "vue-router";
 import { useQuasar } from "quasar";
-import { ref } from "vue";
+import NavBar from "./NavBar.vue";
 const $q = useQuasar();
-const rightDrawerOpen = ref(false);
-function toggleRightDrawer() {
-  rightDrawerOpen.value = !rightDrawerOpen.value;
-}
+const route = useRoute();
 </script>
 
 <template>
   <QLayout view="hHh lpR fFf">
-    <QHeader elevated class="bg-primary text-white">
-      <QToolbar>
-        <QToolbarTitle :shrink="true">
-          <QAvatar rounded>
-            <img src="src\assets\logo.svg" />
-          </QAvatar>
-          <RouterLinkBase link="/" class="header"
-            >Studnia Miejska</RouterLinkBase
-          >
-        </QToolbarTitle>
-        <QSpace />
-        <QBtn
-          class="text-black bg-white"
-          dense
-          flat
-          round
-          icon="menu"
-          @click="toggleRightDrawer"
-        />
-      </QToolbar>
-    </QHeader>
-    <QDrawer v-model="rightDrawerOpen" show-if-above side="right" bordered>
-      <div class="menu">
-        <div>
-          <div class="menu-header-all-items">
-            <span class="menu-header"><b>Kraków</b></span>
-            <div class="x-icon">
-              <QBtn dense flat icon="close" />
-            </div>
-          </div>
-          <QCard class="my-card bg-secondary card-border">
-            <QCardSection> Najnowsze powiadomienia z miasta </QCardSection>
-          </QCard>
-        </div>
-        <div class="buttons">
-          <QBtn class="bg-primary menu-button-margin menu-button"
-            ><b>ZBIORNIKI</b></QBtn
-          >
-          <QBtn class="bg-primary menu-button-margin menu-button"
-            ><b>POGODA</b></QBtn
-          >
-          <QBtn class="bg-primary menu-button-margin menu-button"
-            ><b>POWIADOMIENIA</b></QBtn
-          >
-          <QBtn class="bg-primary menu-button"><b>ZGŁOŚ</b></QBtn>
-        </div>
-        <div class="button-center">
-          <QBtn flat @click="toggleRightDrawer">Zmień miasto</QBtn>
-        </div>
-      </div>
-    </QDrawer>
-
+    <NavBar v-if="route.name != 'home'" />
     <QPageContainer>
       <router-view />
     </QPageContainer>
@@ -115,5 +60,18 @@ function toggleRightDrawer() {
   display: flex;
   justify-content: center;
   opacity: 70%;
+}
+.fancy-border {
+  background-color: white;
+  border-radius: 0px 0px 0px 24px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 </style>
