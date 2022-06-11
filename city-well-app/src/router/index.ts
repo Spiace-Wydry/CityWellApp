@@ -15,9 +15,9 @@ const router = createRouter({
       component: () => import("../features/wizard/KrakowPage.vue"),
     },
     {
-      path: "/login",
-      name: "login",
-      component: () => import("../features/auth/LoginPage.vue"),
+      path: "/pogoda-krakow",
+      name: "pogoda",
+      component: () => import("../features/PogodaKrakow.vue"),
     },
   ],
 });

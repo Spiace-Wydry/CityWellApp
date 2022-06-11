@@ -45,7 +45,9 @@ function toggleRightDrawer() {
         <QBtn class="bg-secondary menu-button-margin menu-button"
           ><b>ZBIORNIKI</b></QBtn
         >
-        <QBtn class="bg-secondary menu-button-margin menu-button"
+        <QBtn
+          to="/pogoda-krakow"
+          class="bg-secondary menu-button-margin menu-button"
           ><b>POGODA</b></QBtn
         >
         <QBtn class="bg-secondary menu-button-margin menu-button"
