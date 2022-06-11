@@ -1,13 +1,17 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import BigNavbar from "../../BigNavbar.vue";
-
+import { useRouter } from "vue-router";
+const router = useRouter();
+function goTo() {
+  router.push("/krakow-bagry");
+}
 </script>
 
 <template>
   <main>
     <div class="my-card-krakow">
-      <QCard class="wycentruj-ten-card bg-primary">
+      <QCard class="wycentruj-ten-card bg-primary" @click="goTo">
         <QCardSection>
           <div class="ułuzmy-wnetrze-carda">
             <QAvatar>

@@ -72,7 +72,7 @@ function toggleRightDrawer() {
         >
       </div>
       <div class="button-center">
-        <QBtn flat>Zmień miasto</QBtn>
+        <QBtn to="/" flat>Zmień miasto</QBtn>
       </div>
     </div>
   </QDrawer>

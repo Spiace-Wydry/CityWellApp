@@ -29,6 +29,11 @@ const router = createRouter({
       name: "zgloszenie",
       component: () => import("../features/ZgloszenieKrakow.vue"),
     },
+    {
+      path: "/krakow-bagry",
+      name: "krakowBagry",
+      component: () => import("../features/KrakowBagry.vue"),
+    },
   ],
 });
 
