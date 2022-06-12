@@ -96,7 +96,7 @@ const isHome = computed(() => {
 }
 
 .image-background {
-  background-image: url("../assets/Obrazek_.png");
+  background-image: url("@/assets/Obrazek_.png");
   height: 100%;
 }
 </style>
