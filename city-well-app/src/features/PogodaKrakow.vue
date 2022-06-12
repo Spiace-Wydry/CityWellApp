@@ -11,7 +11,7 @@
       <QCardSection>
         <div class="ułuzmy-wnetrze-carda">
           <QAvatar size="lg">
-            <img src="..\assets\sun-solid 1.svg" />
+            <img src="../assets/sun-solid1.svg" />
           </QAvatar>
           <div class="trzeba-to-rozsunac">
             <div class="text-h6 zbiornik-blu-blublu-blu">Słonecznie</div>
@@ -30,7 +30,7 @@
       <QCardSection>
         <div class="ułuzmy-wnetrze-carda">
           <QAvatar size="lg">
-            <img src="src\assets\cloud-solid.svg" />
+            <img src="../assets/cloud-solid.svg" />
           </QAvatar>
           <div class="trzeba-to-rozsunac">
             <div class="text-h6 zbiornik-blu-blublu-blu">Pochmurno</div>
@@ -49,7 +49,7 @@
       <QCardSection>
         <div class="ułuzmy-wnetrze-carda">
           <QAvatar size="lg">
-            <img src="src\assets\cloud-showers-heavy-solid.svg" />
+            <img src="../assets/cloud-showers-heavy-solid.svg" />
           </QAvatar>
           <div class="trzeba-to-rozsunac">
             <div class="text-h6 zbiornik-blu-blublu-blu">Deszcz</div>
@@ -68,7 +68,7 @@
       <QCardSection>
         <div class="ułuzmy-wnetrze-carda">
           <QAvatar size="lg">
-            <img src="src\assets\cloud-sun-solid.svg" />
+            <img src="../assets/cloud-sun-solid.svg" />
           </QAvatar>
           <div class="trzeba-to-rozsunac">
             <div class="text-h6 zbiornik-blu-blublu-blu">Pogodnie</div>

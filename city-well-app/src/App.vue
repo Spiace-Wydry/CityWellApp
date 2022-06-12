@@ -14,13 +14,11 @@ const isHome = computed(() => {
 <template>
   <QLayout view="hHh lpR fFf" :class="{ 'image-background': isHome }">
     <NavBar v-if="route.name == 'pogoda' || route.name == 'zgloszenie'" />
-    <BigNavbar
-      v-if="
-        route.name == 'krakow' ||
-        route.name == 'powiadomienia' ||
-        route.name == 'krakowBagry'
-      "
-    />
+    <BigNavbar v-if="
+      route.name == 'krakow' ||
+      route.name == 'powiadomienia' ||
+      route.name == 'krakowBagry'
+    " />
     <QPageContainer>
       <router-view />
     </QPageContainer>
@@ -34,6 +32,7 @@ const isHome = computed(() => {
   justify-content: space-between;
   padding-bottom: 15px;
 }
+
 .menu {
   padding-top: 5px;
   padding-left: 15px;
@@ -43,36 +42,45 @@ const isHome = computed(() => {
   justify-content: space-between;
   height: 100%;
 }
+
 .header {
   color: azure;
   margin-left: 10px;
 }
+
 .menu-header {
   font-size: 1.5rem;
 }
+
 .x-icon {
   display: flex;
   justify-content: flex-start;
 }
+
 .card-border {
   border-left: solid 12px #ff886a;
 }
+
 .buttons {
   display: flex;
   flex-direction: column;
   color: white;
 }
+
 .menu-button-margin {
   margin-bottom: 10px;
 }
+
 .menu-button {
   border-radius: 10px !important;
 }
+
 .button-center {
   display: flex;
   justify-content: center;
   opacity: 70%;
 }
+
 .fancy-border {
   background-color: white;
   border-radius: 0px 0px 0px 24px;
@@ -86,8 +94,9 @@ const isHome = computed(() => {
   justify-content: center;
   align-items: center;
 }
+
 .image-background {
-  background-image: url("src/assets/Obrazek_.png");
+  background-image: url("../assets/Obrazek_.png");
   height: 100%;
 }
 </style>

@@ -11,20 +11,13 @@ function toggleRightDrawer() {
     <QToolbar flat>
       <QToolbarTitle :shrink="true">
         <QAvatar rounded class="przesun">
-          <img src="src\assets\logo.svg" />
+          <img src="./assets/logo.svg" />
         </QAvatar>
         Kraków
       </QToolbarTitle>
       <QSpace />
       <div class="fancy-border">
-        <QBtn
-          class="text-black bg-white"
-          dense
-          flat
-          round
-          icon="menu"
-          @click="toggleRightDrawer"
-        />
+        <QBtn class="text-black bg-white" dense flat round icon="menu" @click="toggleRightDrawer" />
       </div>
     </QToolbar>
   </QHeader>
@@ -42,22 +35,10 @@ function toggleRightDrawer() {
         </QCard>
       </div>
       <div class="buttons">
-        <QBtn to="/krakow" class="bg-secondary menu-button-margin menu-button"
-          ><b>ZBIORNIKI</b></QBtn
-        >
-        <QBtn
-          to="/pogoda-krakow"
-          class="bg-secondary menu-button-margin menu-button"
-          ><b>POGODA</b></QBtn
-        >
-        <QBtn
-          to="/powiadomienia-krakow"
-          class="bg-secondary menu-button-margin menu-button"
-          ><b>POWIADOMIENIA</b></QBtn
-        >
-        <QBtn to="/zgloszenie-krakow" class="bg-secondary menu-button"
-          ><b>ZGŁOŚ</b></QBtn
-        >
+        <QBtn to="/krakow" class="bg-secondary menu-button-margin menu-button"><b>ZBIORNIKI</b></QBtn>
+        <QBtn to="/pogoda-krakow" class="bg-secondary menu-button-margin menu-button"><b>POGODA</b></QBtn>
+        <QBtn to="/powiadomienia-krakow" class="bg-secondary menu-button-margin menu-button"><b>POWIADOMIENIA</b></QBtn>
+        <QBtn to="/zgloszenie-krakow" class="bg-secondary menu-button"><b>ZGŁOŚ</b></QBtn>
       </div>
       <div class="button-center">
         <QBtn to="/" flat>Zmień miasto</QBtn>

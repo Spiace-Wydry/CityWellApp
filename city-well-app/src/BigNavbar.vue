@@ -11,7 +11,7 @@ function toggleRightDrawer() {
     <QToolbar flat>
       <div class="navbar-div">
         <QAvatar rounded>
-          <img src="src\assets\logo.svg" />
+          <img src="./assets/logo.svg" />
         </QAvatar>
         <div class="krakow-margin">
           <span>Kraków</span>
@@ -29,14 +29,7 @@ function toggleRightDrawer() {
       </div>
       <QSpace />
       <div class="fancy-border">
-        <QBtn
-          class="text-black bg-white"
-          dense
-          flat
-          round
-          icon="menu"
-          @click="toggleRightDrawer"
-        />
+        <QBtn class="text-black bg-white" dense flat round icon="menu" @click="toggleRightDrawer" />
       </div>
     </QToolbar>
   </QHeader>
@@ -54,22 +47,10 @@ function toggleRightDrawer() {
         </QCard>
       </div>
       <div class="buttons">
-        <QBtn to="/krakow" class="bg-secondary menu-button-margin menu-button"
-          ><b>ZBIORNIKI</b></QBtn
-        >
-        <QBtn
-          to="/pogoda-krakow"
-          class="bg-secondary menu-button-margin menu-button"
-          ><b>POGODA</b></QBtn
-        >
-        <QBtn
-          to="/powiadomienia-krakow"
-          class="bg-secondary menu-button-margin menu-button"
-          ><b>POWIADOMIENIA</b></QBtn
-        >
-        <QBtn to="/zgloszenie-krakow" class="bg-secondary menu-button"
-          ><b>ZGŁOŚ</b></QBtn
-        >
+        <QBtn to="/krakow" class="bg-secondary menu-button-margin menu-button"><b>ZBIORNIKI</b></QBtn>
+        <QBtn to="/pogoda-krakow" class="bg-secondary menu-button-margin menu-button"><b>POGODA</b></QBtn>
+        <QBtn to="/powiadomienia-krakow" class="bg-secondary menu-button-margin menu-button"><b>POWIADOMIENIA</b></QBtn>
+        <QBtn to="/zgloszenie-krakow" class="bg-secondary menu-button"><b>ZGŁOŚ</b></QBtn>
       </div>
       <div class="button-center">
         <QBtn to="/" flat>Zmień miasto</QBtn>
@@ -82,35 +63,43 @@ function toggleRightDrawer() {
 .round-border {
   border-bottom-left-radius: 25px;
 }
+
 .navbar-heigh {
   height: 150px;
 }
+
 .navbar-div {
   display: flex;
   flex-direction: column;
   margin-top: 15px;
   width: 100%;
 }
+
 .krakow-margin {
   margin-top: 15px;
   margin-bottom: 10px;
   font-size: 1.7rem;
 }
+
 .small-card {
   width: 200px;
 }
+
 .icon-color {
   color: #ffa600;
 }
+
 .trzeba-to-ulozyc {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
 .wycentruj-ten-card {
   margin: auto;
   border-radius: 8px !important;
 }
+
 .powiekszmy-ta-pogode {
   font-size: 1.1rem;
 }
