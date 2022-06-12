@@ -11,7 +11,7 @@
       <QCardSection>
         <div class="ułuzmy-wnetrze-carda">
           <QAvatar size="lg">
-            <img src="src\assets\sun-solid 1.svg" />
+            <img src="..\assets\sun-solid 1.svg" />
           </QAvatar>
           <div class="trzeba-to-rozsunac">
             <div class="text-h6 zbiornik-blu-blublu-blu">Słonecznie</div>
@@ -89,33 +89,40 @@
   margin-left: 20px;
   margin-top: 30px;
 }
+
 .wycentruj-ten-card {
   margin: auto;
   border-radius: 8px !important;
   margin-bottom: 20px;
 }
+
 .ułuzmy-wnetrze-carda {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
 .po-protu-opacity {
   opacity: 70%;
 }
+
 .trzeba-to-rozsunac {
   display: flex;
   flex-direction: column;
   align-content: space-between;
 }
+
 .zbiornik-blu-blublu-blu {
   width: 120px;
 }
+
 .podwyzszenie-daty {
   margin-bottom: 12px;
   margin-left: 10px;
   font-size: 1.3rem;
   opacity: 70%;
 }
+
 .troche-wieksze {
   font-size: 1rem;
 }
