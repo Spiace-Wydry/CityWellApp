@@ -6,6 +6,9 @@ import { quasar, transformAssetUrls } from "@quasar/vite-plugin";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: process.env.NODE_ENV === 'production'
+    ? '/CityWellApp/'
+    : '/',
   plugins: [
     vue({
       template: { transformAssetUrls },
